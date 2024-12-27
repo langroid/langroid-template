@@ -772,14 +772,16 @@ wheels = [
 [[package]]
 name = "example"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
+    { name = "fire" },
     { name = "langroid", extra = ["all"] },
     { name = "pytest" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "fire", specifier = ">=0.5.0" },
     { name = "langroid", extras = ["all"], specifier = ">=0.32.1" },
     { name = "pytest", specifier = ">=8.3.4" },
 ]
