@@ -1,0 +1,23 @@
+[project]
+name = "example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langroid[all]>=0.32.1",
+    "pytest>=8.3.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["examples"]
+exclude = [
+    "**/__pycache__",
+    "**/*.pyc",
+    "**/node_modules/**",
+]
+
