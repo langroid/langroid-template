@@ -28,6 +28,12 @@ If your specific project name is `myproject`, then:
 - Change `example` to your specific project name in the `pyproject.toml` file.
 - rename the `example` folder to `myproject`
 
+## Scripts
+
+Have any useful scripts in the `scripts` folder, and edit the
+`[project.scipts]` section in the `pyproject.toml` file to include paths to these scripts, so they can be run with `uv run <script-name>`.
+
+You can declare script dependencies via metadata at the top of the script file , see [here](https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script)
 
 ## Create virtual env and install dependencies
 
