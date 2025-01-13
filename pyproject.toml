@@ -8,8 +8,17 @@ dependencies = [
     "fire>=0.5.0",
     "langroid[all]>=0.32.1",
     "pytest>=8.3.4",
+    "tomli>=2.0.1",
+    "tomli-w>=1.0.0",
 ]
 
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.4.0",
+    "pymdown-extensions>=10.3",
+]
 
 [project.scripts]
 chat = "scripts.chat:app" # EDIT THIS
