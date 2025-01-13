@@ -10,18 +10,16 @@ dependencies = [
     "pytest>=8.3.4",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
 
 [project.scripts]
 chat = "scripts.chat:app" # EDIT THIS
 
-
-
-
 [tool.packaging]
 warn = false
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.hatch.build]
 include = ["scripts"] #EDIT THIS
